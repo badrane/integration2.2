@@ -41,13 +41,58 @@
 /* ==header */
 /* ----------------------------- */
 header{
-    ba
-} 
+    width: 100%;
+    height: 350px;
+    background-image: url(../img/index_fond.png);
+    display: flex;
+    justify-content: center;
+    
+}
 
+.fiximg{
+    position: absolute;
+}
+.fixlogo{
+    width: 200px;
+    height: auto;
+    margin-top: 3%;
+}
 
 /* ----------------------------- */
 /* ==main */
 /* ----------------------------- */
+main{
+    padding-top: 2%;
+    background-color: #F8F9EB;
+} 
+
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+} 
+
+.lesarticles{
+    width: 13%;
+    margin-right: 2%;
+    height: 200px;
+}
+
+.colorart1{
+    background-color:#9ECAB7 ;
+}
+.colorart2{
+    background-color:#ECC7A1 ;
+}
+.colorart3{
+    background-color: #CAEADE;
+}
+
+hr{
+    color: white;
+    width: 40%;
+    margin-left: 10%;
+} 
 
 
 /* ----------------------------- */
