@@ -33,7 +33,9 @@
 /* importation style de base avec @import url(knacss.css); */
 
 
+
 /* ----------------------------- */
+
 
 
 
@@ -41,25 +43,24 @@
 /* ==header */
 /* ----------------------------- */
 body{
-    border-left: 5px solid #0A1F51;
-}
+    background-color: #F8F9EB;
+} 
 
 header{
-    width: 100%;
+    width: auto;
     height: 350px;
-    background-image: url(../img/index_fond.png);
+    background-image: url(../img/index.png), url(../img/particles.png), url(../img/index_fond.png);
     display: flex;
     justify-content: center;
-    
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
-.fiximg{
-    position: absolute;
-}
 .fixlogo{
     width: 200px;
     height: auto;
     margin-top: 3%;
+    position: absolute;
 }
 
 /* ----------------------------- */
@@ -67,15 +68,17 @@ header{
 /* ----------------------------- */
 main{
     padding-top: 2%;
-    background-color: #F8F9EB;
+
+    
+    
 } 
 
 section{
-    padding-left: 20%;
-    margin-right: 3%;
     width: 70%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 1%;
     margin-bottom: 1%;
 } 
@@ -85,7 +88,9 @@ section{
     margin-right: 5px;
     height: 200px;
     margin-top: 5px;
+
 }
+
 
 .colorart1{
     background-color:#9ECAB7 ;
@@ -142,7 +147,7 @@ hr{
 
 span{
     color:white;
-    transform: rotate(10deg)
+    transform: rotate(10deg);
 }
 
 /* ----------------------------- */
@@ -185,7 +190,6 @@ span{
 /* ----------------------------- */
 
 footer{
-    background-color:#F8F9EB;
     text-align: center;
 }
 
@@ -198,5 +202,40 @@ footer{
 /* ----------------------------- */
 /* ==adaptive web design */
 /* ----------------------------- */
+@media all and (max-width: 312px) and (max-height: 2000px){
 
 
+    body{
+        width: 280px;
+        height: 480px;
+    } 
+    header{
+        height: 100px;
+        width: 100%;
+        background-size: 100%;
+        background-image: url(../img/index.png), url(../img/particles.png), url(../img/index_fond.png);
+    } 
+
+    .fixlogo{
+        width: 80px;
+        height: auto;
+    }
+    .fiximg{
+        width: 280px;
+    }
+
+    section{
+        display:flex;
+        flex-wrap: wrap;
+
+    } 
+
+
+    .lesarticles
+
+    {
+        width : auto;
+        height: auto;
+        font-size: 1.2em;
+    }
+} 
